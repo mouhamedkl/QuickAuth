@@ -1,6 +1,6 @@
-# SimpleNodeAuth
+# simplenode_auth
 
-SimpleNodeAuth is a simple, flexible, and fast solution for creating Express.js applications with built-in authentication. It supports both MySQL and MongoDB, providing all the necessary middlewares, services, controllers, and routes to get started quickly.
+simplenode_auth is a simple, flexible, and fast solution for creating Express.js applications with built-in authentication. It supports both MySQL and MongoDB, providing all the necessary middlewares, services, controllers, and routes to get started quickly.
 
 ## Features
 
@@ -12,10 +12,10 @@ SimpleNodeAuth is a simple, flexible, and fast solution for creating Express.js 
 
 ## Installation
 
-To create a SimpleNodeAuth project, run:
+To create a simplenode_auth project, run:
 
 ```bash
-npx simplenodeauth create test-project 
+npx simplenode_auth create test-project 
 ```
 This command will generate a fully configured project directory.
 ## Usage
@@ -33,5 +33,5 @@ npm start
 ```
 Your project will be live and ready for customization!
 ## Licence
-[MIT](https://github.com/mouhamedkl/QuickAuth/blob/main/Licence)
+[MIT](https://github.com/mouhamedkl/simplenode_auth/blob/main/Licence)
 

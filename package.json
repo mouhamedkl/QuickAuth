@@ -1,8 +1,13 @@
 {
-  "name": "SimpleNodeAuth",
+  "name": "simplenode_auth",
   "version": "1.0.0",
-  "description": "SimpleNodeAuth is a fast and flexible authentication solution for Express.js, supporting MySQL and MongoDB with JWT integration.",
+  "description": "simplenode_auth node is a fast and flexible authentication solution for Express.js, supporting MySQL and MongoDB with JWT integration.",
   "main": "index.js",
+  "bin": {
+    "simplenode_auth": "./index.js"
+  },
+  "homepage": "https://github.com/mouhamedkl/simplenode_auth",
+  "repository": "github:mouhamedkl/simplenode_auth",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +16,7 @@
     "commander": "^12.1.0",
     "fs": "^0.0.1-security",
     "inquirer": "^8.2.6",
+    "npm": "^10.9.1",
     "path": "^0.12.7"
   },
   "keywords": [

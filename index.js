@@ -657,6 +657,7 @@ module.exports = authMiddleware;
 program
     .command('create <project-name>')
     .description('Créer un nouveau projet Express')
+    
     .action(async (projectName) => {
         try {
 const answers = await inquirer.prompt([
@@ -693,7 +694,8 @@ const answers = await inquirer.prompt([
         when: (answers) => answers.db === 'MySQL',
     },
 ]);
-
+console.log('Installing dependencies...');
+require('child_process').execSync('npm install simplenode_auth', { stdio: 'inherit' });
 await createProject(projectName, answers);
         } catch (error) {
 console.error(`❌ Une erreur est survenue : ${error.message}`);
