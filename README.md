@@ -1,6 +1,6 @@
-# QuickAuth
+# SimpleNodeAuth
 
-QuickAuth is a simple, flexible, and fast solution for creating Express.js applications with built-in authentication. It supports both MySQL and MongoDB, providing all the necessary middlewares, services, controllers, and routes to get started quickly.
+SimpleNodeAuth is a simple, flexible, and fast solution for creating Express.js applications with built-in authentication. It supports both MySQL and MongoDB, providing all the necessary middlewares, services, controllers, and routes to get started quickly.
 
 ## Features
 
@@ -12,10 +12,10 @@ QuickAuth is a simple, flexible, and fast solution for creating Express.js appli
 
 ## Installation
 
-To create a QuickAuth project, run:
+To create a SimpleNodeAuth project, run:
 
 ```bash
-npx quickauth create test-project 
+npx simplenodeauth create test-project 
 ```
 This command will generate a fully configured project directory.
 ## Usage

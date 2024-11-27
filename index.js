@@ -497,50 +497,6 @@ mongoose.connect(url)
 module.exports = mongoose;
 `;
 break;
-        case 'PostgreSQL':
-dbConfigContent = `
-const { Pool } = require('pg');
-
-const pool = new Pool({
-    user: process.env.DB_USER || 'root',
-    host: process.env.DB_HOST || 'localhost',
-    database: process.env.DB_NAME || 'mydb',
-    password: process.env.DB_PASSWORD || '',
-    port: process.env.DB_PORT,
-});
-
-pool.connect(err => {
-    if (err) {
-        console.error('Erreur de connexion à PostgreSQL: ', err);
-        process.exit(1);
-    }
-    console.log('Connecté à PostgreSQL');
-});
-
-module.exports = pool;
-`;
-break;
-        case 'SQLite':
-dbConfigContent = `
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database(process.env.DB_NAME);
-
-db.serialize(() => {
-    db.run('CREATE TABLE IF NOT EXISTS users (id INT, name TEXT)');
-});
-
-db.on('open', () => {
-    console.log('Connecté à SQLite');
-});
-
-db.on('error', err => {
-    console.error('Erreur de connexion à SQLite: ', err);
-    process.exit(1);
-});
-
-module.exports = db;
-`;
-break;
         default:
 console.log('Base de données non prise en charge');
 return;
