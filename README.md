@@ -33,5 +33,5 @@ npm start
 ```
 Your project will be live and ready for customization!
 ## Licence
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://github.com/mouhamedkl/QuickAuth/blob/main/Licence)
 
